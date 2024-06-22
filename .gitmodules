@@ -1,6 +1,3 @@
 [submodule "snoserve"]
 	path = snoserve
 	url = https://github.com/seesteins/snoserve.git
-[submodule "geoserver-restconfig"]
-	path = geoserver-restconfig
-	url = https://github.com/seesteins/geoserver-restconfig.git
