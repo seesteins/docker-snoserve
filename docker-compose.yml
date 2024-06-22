@@ -1,0 +1,16 @@
+version: '3'
+services:
+  snoserve:
+    container_name: snoserve
+    env_file: .env
+    environment:
+      - 'GEOSERVER_ADDRESS=${GEOSERVER_ADDRESS}'
+      - 'GEOSERVER_USERNAME=${GEOSERVER_USERNAME}'
+      - 'GEOSERVER_PASS=${GEOSERVER_PASS}'
+    networks:
+      - backend
+    build: .
+networks:
+  backend:
+    external: true
+
