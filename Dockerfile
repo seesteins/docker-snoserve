@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     git \
     curl
-RUN pip3 install gdal==3.4.1 git+https://github.com/seesteins/geoserver-restcon>
+RUN pip3 install gdal==3.4.1 git+https://github.com/seesteins/geoserver-restconfig.git#egg=geoserver-restconfig pytz
 COPY ./snoserve/styles/ ./styles/
 COPY ./snoserve/snoserve.py ./snoserve.py
 COPY ./snoserve/filenames.txt ./filenames.txt
